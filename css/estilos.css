@@ -1,0 +1,78 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    background-image: url(../imagenes/pared.jpg);
+}
+
+.container-fluid {
+    height: 100vh;
+}
+
+.portero {
+    height: 100vh;
+}
+
+.card {
+    border: none;
+}
+
+img {
+    width: 2.5em;
+}
+
+.card-portero {
+    box-shadow: -4px 4px 5px 3px rgba(0,0,0,0.75);
+}
+
+.fondo-portero {
+    background-image: url(../imagenes/fondoportero.png);
+}
+
+.btn-portero {
+    color: rgb(0,0,0);
+    font-size: 2.5em;
+    font-weight: 200;
+}
+
+.btn:focus{
+    box-shadow: none;
+    animation-name: seleccionarBoton;
+    animation-duration: 0.3s;
+}
+
+.btn:focus{
+    box-shadow: none;
+}
+
+.btn:hover {
+    color: rgb(0,0,0);
+}
+
+@keyframes seleccionarBoton {
+    from{
+        color: rgb(0,0,0);
+    }
+
+    to {
+        color: rgb(4, 0, 255);
+    }
+}
+
+
+
+.pantalla {
+    color: rgb(265, 265, 265);
+    font-weight: 500;
+    font-size: 1.3em;
+    border: rgb(45, 45, 45) 10px solid;
+    border-bottom: 40px solid rgb(45,45,45);
+    height: 100%;
+background: rgb(118,107,130);
+background: linear-gradient(180deg, rgba(118,107,130,1) 0%, rgba(195,169,223,1) 100%);
+    border-radius: 20px;
+}
+
+.card-header, .card-footer {
+    background-color: rgb(45,47,47) !important;
+    background: linear-gradient(90deg, rgba(45,47,47,1) 59%, rgba(0,0,0,1) 100%) !important;   
+}
