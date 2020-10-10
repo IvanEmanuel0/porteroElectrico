@@ -34,6 +34,20 @@ img {
     font-weight: 200;
 }
 
+#visor-ayuda{
+    font-size: 0.5em;
+}
+
+.btn-luz {
+    color: rgb(10, 7, 197);
+    font-size: 2.5em;
+    font-weight: 200;
+}
+
+.btn-luz:hover {
+    color: rgb(10, 7, 197);
+}
+
 .btn:focus{
     box-shadow: none;
     animation-name: seleccionarBoton;
@@ -44,7 +58,7 @@ img {
     box-shadow: none;
 }
 
-.btn:hover {
+.btn-portero:hover {
     color: rgb(0,0,0);
 }
 
@@ -54,11 +68,9 @@ img {
     }
 
     to {
-        color: rgb(4, 0, 255);
+        color: rgb(10, 7, 197);
     }
 }
-
-
 
 .pantalla {
     color: rgb(265, 265, 265);

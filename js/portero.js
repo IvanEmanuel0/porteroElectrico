@@ -15,6 +15,9 @@ tocar = document.getElementById('tocar');
 numeroPiso = document.getElementById('nro-piso');
 numeroDepartamento = document.getElementById('nro-dpto');
 visor = document.getElementById('visor');
+ayuda = document.getElementById('ayuda');
+visorAyuda = document.getElementById('visor-ayuda');
+portero = document.getElementById('portero');
 
 
 uno.onclick = function (e) {
@@ -100,6 +103,7 @@ cero.onclick = function (e) {
 borrar.onclick = function (e) {
     numeroPiso.textContent = null;
     numeroDepartamento.textContent = null;
+    visorAyuda.textContent = null;
     visor.innerHTML = "<span>Bienvenido!</span>"
 }
 
@@ -113,6 +117,15 @@ tocar.onclick = function (e) {
         visor.innerHTML = `<marquee scrollamount=15> Error! Número de piso entre 0 y 48. Número de departamento entre 1 y 6.</marquee>`;
     }
 }
+
+ayuda.onclick = function (e) {
+    visorAyuda.textContent = "Para usar el portero digital debera introducir el número de piso (0 - 48) y el número de departamento (1 - 6)"
+}
+
+portero.onclick = function (e) {
+    visor.innerHTML = `<marquee scrollamount=15>Llamando al encargado del edificio.</marquee>`;
+}
+
 
 function validarDigitos(numero) {
     if (numero.length < 2) return true;
