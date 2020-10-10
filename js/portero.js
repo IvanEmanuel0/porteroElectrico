@@ -18,6 +18,7 @@ visor = document.getElementById('visor');
 ayuda = document.getElementById('ayuda');
 visorAyuda = document.getElementById('visor-ayuda');
 portero = document.getElementById('portero');
+luz = document.getElementById('luz');
 
 
 uno.onclick = function (e) {
@@ -105,6 +106,20 @@ borrar.onclick = function (e) {
     numeroDepartamento.textContent = null;
     visorAyuda.textContent = null;
     visor.innerHTML = "<span>Bienvenido!</span>"
+    uno.classList.remove('btn-luz');
+    dos.classList.remove('btn-luz');
+    tres.classList.remove('btn-luz');
+    cuatro.classList.remove('btn-luz');
+    cinco.classList.remove('btn-luz');
+    seis.classList.remove('btn-luz');
+    siete.classList.remove('btn-luz');
+    ocho.classList.remove('btn-luz');
+    nueve.classList.remove('btn-luz');
+    cero.classList.remove('btn-luz');
+    ayuda.classList.remove('btn-luz');
+    portero.classList.remove('btn-luz');
+    borrar.classList.remove('btn-luz');
+    tocar.classList.remove('btn-luz')
 }
 
 tocar.onclick = function (e) {
@@ -124,6 +139,23 @@ ayuda.onclick = function (e) {
 
 portero.onclick = function (e) {
     visor.innerHTML = `<marquee scrollamount=15>Llamando al encargado del edificio.</marquee>`;
+}
+
+luz.onclick = function (e) {
+    uno.classList.add('btn-luz');
+    dos.classList.add('btn-luz');
+    tres.classList.add('btn-luz');
+    cuatro.classList.add('btn-luz');
+    cinco.classList.add('btn-luz');
+    seis.classList.add('btn-luz');
+    siete.classList.add('btn-luz');
+    ocho.classList.add('btn-luz');
+    nueve.classList.add('btn-luz');
+    cero.classList.add('btn-luz');
+    ayuda.classList.add('btn-luz');
+    portero.classList.add('btn-luz');
+    borrar.classList.add('btn-luz');
+    tocar.classList.add('btn-luz');
 }
 
 

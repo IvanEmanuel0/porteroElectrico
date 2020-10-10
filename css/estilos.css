@@ -31,21 +31,11 @@ img {
 .btn-portero {
     color: rgb(0,0,0);
     font-size: 2.5em;
-    font-weight: 200;
+    font-weight: bold;
 }
 
 #visor-ayuda{
     font-size: 0.5em;
-}
-
-.btn-luz {
-    color: rgb(10, 7, 197);
-    font-size: 2.5em;
-    font-weight: 200;
-}
-
-.btn-luz:hover {
-    color: rgb(10, 7, 197);
 }
 
 .btn:focus{
@@ -70,6 +60,15 @@ img {
     to {
         color: rgb(10, 7, 197);
     }
+}
+
+.btn-luz {
+    color: rgb(10, 7, 197);
+    font-size: 2.5em;
+}
+
+.btn-luz:hover {
+    color: rgb(10, 7, 197);
 }
 
 .pantalla {
