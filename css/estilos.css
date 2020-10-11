@@ -58,17 +58,17 @@ img {
     }
 
     to {
-        color: rgb(10, 7, 197);
+        color: rgb(10, 7, 167);
     }
 }
 
 .btn-luz {
-    color: rgb(10, 7, 197);
+    color: rgb(10, 7, 167);
     font-size: 2.5em;
 }
 
 .btn-luz:hover {
-    color: rgb(10, 7, 197);
+    color: rgb(10, 7, 167);
 }
 
 .pantalla {

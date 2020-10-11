@@ -22,83 +22,43 @@ luz = document.getElementById('luz');
 
 
 uno.onclick = function (e) {
-    let piso, departamento;
-    piso = numeroPiso.textContent;
-    departamento = numeroDepartamento.textContent;
-    if (validarDigitos(piso)) numeroPiso.textContent += '1';
-    else if (validarDigitos(departamento)) numeroDepartamento.textContent += '1';
+    marcarNumero(1);
 }
 
 dos.onclick = function (e) {
-    let piso, departamento;
-    piso = numeroPiso.textContent;
-    departamento = numeroDepartamento.textContent;
-    if (validarDigitos(piso)) numeroPiso.textContent += '2';
-    else if (validarDigitos(departamento)) numeroDepartamento.textContent += '2';
+    marcarNumero(2);
 }
 
 tres.onclick = function (e) {
-        let piso, departamento;
-    piso = numeroPiso.textContent;
-    departamento = numeroDepartamento.textContent;
-    if (validarDigitos(piso)) numeroPiso.textContent += '3';
-    else if (validarDigitos(departamento)) numeroDepartamento.textContent += '3';
+    marcarNumero(3);
 }
 
 cuatro.onclick = function (e) {
-        let piso, departamento;
-    piso = numeroPiso.textContent;
-    departamento = numeroDepartamento.textContent;
-    if (validarDigitos(piso)) numeroPiso.textContent += '4';
-    else if (validarDigitos(departamento)) numeroDepartamento.textContent += '4';
+    marcarNumero(4);
 }
 
 cinco.onclick = function (e) {
-        let piso, departamento;
-    piso = numeroPiso.textContent;
-    departamento = numeroDepartamento.textContent;
-    if (validarDigitos(piso)) numeroPiso.textContent += '5';
-    else if (validarDigitos(departamento)) numeroDepartamento.textContent += '5';
+    marcarNumero(5);
 }
 
 seis.onclick = function (e) {
-        let piso, departamento;
-    piso = numeroPiso.textContent;
-    departamento = numeroDepartamento.textContent;
-    if (validarDigitos(piso)) numeroPiso.textContent += '6';
-    else if (validarDigitos(departamento)) numeroDepartamento.textContent += '6';
+    marcarNumero(6);
 }
 
 siete.onclick = function (e) {
-        let piso, departamento;
-    piso = numeroPiso.textContent;
-    departamento = numeroDepartamento.textContent;
-    if (validarDigitos(piso)) numeroPiso.textContent += '7';
-    else if (validarDigitos(departamento)) numeroDepartamento.textContent += '7';
+    marcarNumero(7);
 }
 
 ocho.onclick = function (e) {
-        let piso, departamento;
-    piso = numeroPiso.textContent;
-    departamento = numeroDepartamento.textContent;
-    if (validarDigitos(piso)) numeroPiso.textContent += '8';
-    else if (validarDigitos(departamento)) numeroDepartamento.textContent += '8';
+    marcarNumero(8);
 }
 
 nueve.onclick = function (e) {
-        let piso, departamento;
-    piso = numeroPiso.textContent;
-    departamento = numeroDepartamento.textContent;
-    if (validarDigitos(piso)) numeroPiso.textContent += '9';
-    else if (validarDigitos(departamento)) numeroDepartamento.textContent += '9';
+    marcarNumero(9);
 }
 
 cero.onclick = function (e) {
-        let piso, departamento;
-    piso = numeroPiso.textContent;
-    departamento = numeroDepartamento.textContent;
-    if (validarDigitos(piso)) numeroPiso.textContent += '0';
-    else if (validarDigitos(departamento)) numeroDepartamento.textContent += '0';
+    marcarNumero(0);
 }
 
 borrar.onclick = function (e) {
@@ -134,7 +94,7 @@ tocar.onclick = function (e) {
 }
 
 ayuda.onclick = function (e) {
-    visorAyuda.textContent = "Para usar el portero digital debera introducir el número de piso (0 - 48) y el número de departamento (1 - 6)"
+    visorAyuda.textContent = "Para usar el portero digital debera introducir el número de piso (0 - 48) y el número de departamento (1 - 6)";
 }
 
 portero.onclick = function (e) {
@@ -158,7 +118,6 @@ luz.onclick = function (e) {
     tocar.classList.add('btn-luz');
 }
 
-
 function validarDigitos(numero) {
     if (numero.length < 2) return true;
 }
@@ -169,5 +128,13 @@ function validarPiso(numero) {
 
 function validarDepartamento(numero) {
     if (numero >= 1 && numero <= 6) return true;
+}
+
+function marcarNumero(numero) {
+    let piso, departamento;
+    piso = numeroPiso.textContent;
+    departamento = numeroDepartamento.textContent;
+    if (validarDigitos(piso)) numeroPiso.textContent += numero;
+    else if (validarDigitos(departamento)) numeroDepartamento.textContent += numero;
 }
 
